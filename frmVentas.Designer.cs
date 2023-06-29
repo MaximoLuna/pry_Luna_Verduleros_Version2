@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dgvVentas = new System.Windows.Forms.DataGridView();
             this.vERDULEROSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vERDULEROSDataSet = new pry_Luna_Verduleros.VERDULEROSDataSet();
             this.cmbVendedor = new System.Windows.Forms.ComboBox();
@@ -42,24 +41,11 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.mrcVenta = new System.Windows.Forms.GroupBox();
             this.nudKilos = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vERDULEROSDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vERDULEROSDataSet)).BeginInit();
             this.mrcVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudKilos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvVentas
-            // 
-            this.dgvVentas.AllowUserToAddRows = false;
-            this.dgvVentas.AutoGenerateColumns = false;
-            this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVentas.DataSource = this.vERDULEROSDataSetBindingSource;
-            this.dgvVentas.Location = new System.Drawing.Point(12, 140);
-            this.dgvVentas.Name = "dgvVentas";
-            this.dgvVentas.Size = new System.Drawing.Size(410, 167);
-            this.dgvVentas.TabIndex = 0;
-            this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // vERDULEROSDataSetBindingSource
             // 
@@ -174,13 +160,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 326);
+            this.ClientSize = new System.Drawing.Size(439, 141);
             this.Controls.Add(this.mrcVenta);
-            this.Controls.Add(this.dgvVentas);
             this.Name = "frmVentas";
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.frmVentas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vERDULEROSDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vERDULEROSDataSet)).EndInit();
             this.mrcVenta.ResumeLayout(false);
@@ -191,8 +175,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.ComboBox cmbVendedor;
         private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.Label lblVendedor;

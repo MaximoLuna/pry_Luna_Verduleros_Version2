@@ -18,6 +18,8 @@ namespace pry_Luna_Verduleros
             InitializeComponent();
         }
 
+        string Conexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=VERDULEROS.mdb;";
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
